@@ -1,0 +1,99 @@
+/*----- NavBar Brand Small Tag Line -----*/
+.navbar-brand small {
+  display:block;
+  font-size:12px;
+}
+
+.navbar-toggle {top:10px}
+
+@media (min-width:768px) {
+  
+  .navbar-brand {
+    padding-top:15px;
+  }
+  
+  .nav.navbar-nav a {
+    padding-top:25px;
+    padding-bottom:25px;
+  }
+
+}
+/*---- END -----*/
+
+/*----- NavBar Color Change -----*/
+/* navbar */
+.navbar-default {
+    /* background-color: #2980b9;
+    border-color: #2980B9; */
+    background-color: #1B7B98;
+  	padding:0 95px 0 0;
+  	opacity: .9
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #d7eaf6;
+    text-shadow: 1px 1px #5f707b;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #fff;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: #0d293b;
+    /* color: #1b5479; */
+    /* background-color: #5f707b; */ 
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #6c6c6c;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #55a5d9;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
+/*----- END -----*/

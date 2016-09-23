@@ -1,0 +1,143 @@
+.loader {
+  display: inline-block;
+  /*Comment by me*/
+  /* margin: 60px;
+  position: relative; */
+  
+  /*My Change*/
+  position: absolute;
+  margin: 0 0 46px 145px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*My Change End */
+}
+.loader .loader-text {
+  display: inline-block;
+  margin-top: 0.5em;
+}
+.loader .container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-animation: rotate 2.4s linear infinite;
+}
+.loader .dotwrap {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -20%;
+  top: 50%;
+  margin-top: -47%;
+  -webkit-animation: smallbig 2.4s linear infinite;
+}
+.loader .dot {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 1s ease;
+  position: relative;
+  font-size: 1.2em;
+  line-height: 1;
+  -webkit-animation: dots 2.4s linear infinite;
+}
+.loader .dotwrap:nth-child(5n+1) {
+  -webkit-transform: rotate(0deg);
+}
+.loader .dotwrap:nth-child(5n+1) .dot {
+  color: #84bd00;
+}
+.loader .dotwrap:nth-child(5n+2) {
+  -webkit-transform: rotate(72deg);
+}
+.loader .dotwrap:nth-child(5n+2) .dot {
+  color: #eaaa00;
+}
+.loader .dotwrap:nth-child(5n+3) {
+  -webkit-transform: rotate(144deg);
+}
+.loader .dotwrap:nth-child(5n+3) .dot {
+  color: #b36924;
+}
+.loader .dotwrap:nth-child(5n+4) {
+  -webkit-transform: rotate(216deg);
+}
+.loader .dotwrap:nth-child(5n+4) .dot {
+  color: #d11a50;
+}
+.loader .dotwrap:nth-child(5n+5) {
+  -webkit-transform: rotate(288deg);
+}
+.loader .dotwrap:nth-child(5n+5) .dot {
+  color: #510864;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes smallbig {
+  50% {
+    height: 40%;
+    margin-top: -20%;
+  }
+}
+@-webkit-keyframes dots {
+  50% {
+    opacity: .1;
+  }
+  100% {
+    opacity: .9;
+  }
+}
+.size16 .container {
+  width: 16px;
+  height: 16px;
+}
+.size16 .dot {
+  font-size: 6.4px;
+}
+
+.size32 .container {
+  width: 32px;
+  height: 32px;
+}
+.size32 .dot {
+  font-size: 12.8px;
+}
+
+.size48 .container {
+  width: 48px;
+  height: 48px;
+}
+.size48 .dot {
+  font-size: 19.2px;
+}
+
+.size64 .container {
+  width: 64px;
+  height: 64px;
+}
+.size64 .dot {
+  font-size: 25.6px;
+}
+
+.size80 .container {
+  width: 80px;
+  height: 80px;
+}
+.size80 .dot {
+  font-size: 32px;
+}
+
+.size96 .container {
+  width: 96px;
+  height: 96px;
+}
+.size96 .dot {
+  font-size: 38.4px;
+}
